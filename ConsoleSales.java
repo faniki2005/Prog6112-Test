@@ -11,6 +11,7 @@ public class ConsoleSales {
    public ConsoleSales(String consoleType, String store, int totalSales) {
         
     }
+   // Prints the console type, store name and total sales
     public void printReport() {
 System.out.println("-----------------------------------");
   System.out.println("CONSOLE SALES REPORT");

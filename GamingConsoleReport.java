@@ -30,19 +30,21 @@ public class GamingConsoleReport {
          maxIndex = i;
             }
   }
+     // Divider line used in the report
  String line = "-----------------------------------------------------------------";
 
-        
+      // Print the report heading  
      System.out.println(line);
         System.out.println("GAMING CONSOLE REPORT");
     System.out.println(line);
-
+ 
+    // Print the console names as column headings
      System.out.printf("%-18s", "");
         for (String console : consoles) {
      System.out.printf("%-10s", console);
         }
    System.out.println();
-
+  // Print each city with its sales per console
         for (int i = 0; i < cities.length; i++) {
      System.out.printf("%-18s", cities[i]);
          for (int j = 0; j < sales[i].length; j++) {
@@ -50,15 +52,17 @@ public class GamingConsoleReport {
             }
      System.out.println();
         }
-   System.out.println(line);
+        
+        // Print the total sales for each city
+    System.out.println(line);
     System.out.println("CONSOLE SALES TOTALS FOR EACH CITY");
- System.out.println(line);
+    System.out.println(line);
 
         for (int i = 0; i < cities.length; i++) {
-  System.out.printf("%-18s%d%n", cities[i], totals[i]);
+     System.out.printf("%-18s%d%n", cities[i], totals[i]);
         }
-
-  System.out.println();
+ // Print the city with the most sales
+   System.out.println();
    System.out.println("CITY WITH THE MOST SALES: " + cities[maxIndex]);
     System.out.println(line);
     }
